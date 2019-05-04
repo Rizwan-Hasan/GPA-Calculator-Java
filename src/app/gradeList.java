@@ -9,14 +9,16 @@ import java.util.Map;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
-public class gradeList {
+public class gradeList
+{
     /*
     public static void main(String[] args) {
         System.out.println(new gradeList().load());
     }
      */
 
-    Map<String, Object> load() {
+    Map<String, Object> load()
+    {
         InputStream inputStream = null;
         try {
             File file = new File("grade.yml");
@@ -27,7 +29,8 @@ public class gradeList {
         return new Yaml().load(inputStream);
     }
 
-    boolean dump(Map<String, Object> data) {
+    boolean dump(Map<String, Object> data)
+    {
         DumperOptions options = new DumperOptions();
         options.setIndent(4);
         options.setDefaultFlowStyle(DumperOptions.FlowStyle.BLOCK);
