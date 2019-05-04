@@ -86,3 +86,29 @@ Application Cascading Style Sheets
     -fx-text-fill: #854445;
     -fx-effect: dropshadow(three-pass-box, rgba(110,48,66,1), 15, 0, 0, 0);
 }
+
+.menu:showing {
+    -fx-background-color: #6D3042;
+    -fx-effect: dropshadow(three-pass-box, rgba(110,48,66,1), 20, 0, 0, 0);
+}
+
+.menu-bar {
+    -fx-background-color: #E5E0E6;
+    -fx-effect: dropshadow(three-pass-box, rgba(110,48,66,0.5), 20, 0, 0, 0);
+}
+
+.menu-bar:hover {
+    -fx-effect: dropshadow(three-pass-box, rgba(110,48,66,1), 20, 0, 0, 0);
+}
+
+.menu:hover {
+    -fx-background-color: #6D3042;
+}
+
+.menu-item {
+    -fx-background-color: #E5E0E6;
+}
+
+.menu-item:hover {
+    -fx-background-color: #6D3042;
+}

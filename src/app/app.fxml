@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="770.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
     <children>
       <AnchorPane fx:id="mainForm" layoutX="483.0" layoutY="18.0" prefHeight="388.0" prefWidth="261.0">
          <children>
@@ -40,9 +40,9 @@
             <Font name="Dosis SemiBold" size="36.0" />
          </font>
       </Label>
-      <MenuBar>
+      <MenuBar fx:id="menubar">
         <menus>
-          <Menu mnemonicParsing="false" text="Grade Sheet">
+          <Menu fx:id="gsheetMenu" mnemonicParsing="false" text="Grade Sheet">
             <items>
               <MenuItem mnemonicParsing="false" text="Edit Sheet" />
                   <MenuItem mnemonicParsing="false" text="Quit" />

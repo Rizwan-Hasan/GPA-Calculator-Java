@@ -10,10 +10,11 @@ import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
 public class gradeList {
-
+    /*
     public static void main(String[] args) {
         System.out.println(new gradeList().load());
     }
+     */
 
     Map<String, Object> load() {
         InputStream inputStream = null;
