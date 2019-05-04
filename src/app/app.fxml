@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="770.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="770.0" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
     <children>
       <AnchorPane fx:id="mainForm" layoutX="483.0" layoutY="18.0" prefHeight="388.0" prefWidth="261.0">
          <children>
@@ -45,7 +45,7 @@
           <Menu fx:id="gsheetMenu" mnemonicParsing="false" text="Grade Sheet">
             <items>
               <MenuItem mnemonicParsing="false" text="Edit Sheet" />
-                  <MenuItem mnemonicParsing="false" text="Quit" />
+                  <MenuItem fx:id="quitMenuBtn" mnemonicParsing="false" onAction="#ok" text="Quit" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
