@@ -17,7 +17,7 @@ class ControllerAnimation extends ControllerSceneObjectVars
         fadeIn.setCycleCount(1);
         fadeIn.setAutoReverse(false);
         fadeIn.playFromStart();
-         */
+        //
 
         // Main Form
         Line line1 = new Line();
@@ -54,7 +54,6 @@ class ControllerAnimation extends ControllerSceneObjectVars
         scaleIn3.setDuration(Duration.millis(3000));
         scaleIn3.setPath(line3);
         scaleIn3.play();
-
-        //
+        */
     }
 }

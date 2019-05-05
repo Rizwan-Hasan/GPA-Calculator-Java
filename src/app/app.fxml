@@ -30,7 +30,7 @@
             <CheckBox fx:id="theoryCheckBox" layoutX="212.0" layoutY="21.0" mnemonicParsing="false" />
             <CheckBox fx:id="labCheckBox" layoutX="212.0" layoutY="102.0" mnemonicParsing="false" />
             <ImageView fx:id="circleImage" fitHeight="194.0" fitWidth="194.0" layoutX="34.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true" />
-            <Button fx:id="calculateButton" layoutX="82.0" layoutY="229.0" mnemonicParsing="false" prefHeight="97.0" prefWidth="99.0" text="Calculate">
+            <Button fx:id="calculateButton" layoutX="82.0" layoutY="229.0" mnemonicParsing="false" onAction="#calculateBtnAction" prefHeight="97.0" prefWidth="99.0" text="Calculate">
                <font>
                   <Font name="Fugaz One" size="12.0" />
                </font></Button>
@@ -45,7 +45,7 @@
           <Menu fx:id="gsheetMenu" mnemonicParsing="false" text="Grade Sheet">
             <items>
               <MenuItem mnemonicParsing="false" text="Edit Sheet" />
-                  <MenuItem fx:id="quitMenuBtn" mnemonicParsing="false" onAction="#ok" text="Quit" />
+                  <MenuItem fx:id="quitMenuBtn" mnemonicParsing="false" onAction="#quitMenuBtnAction" text="Quit" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">
