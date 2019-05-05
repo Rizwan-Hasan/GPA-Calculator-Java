@@ -5,11 +5,11 @@ import java.util.Map;
 
 class calculator
 {
-    double CGPA;
-    double totalCredit;
-    String[] theoryGrades;
-    String[] labGrades;
-    Map<String, Object> gradeSheet = new gradeList().load();
+    private double CGPA;
+    private double totalCredit;
+    private String[] theoryGrades;
+    private String[] labGrades;
+    private Map<String, Object> gradeSheet = new gradeList().load();
 
     calculator(String x, String y, boolean xCheck, boolean yCheck)
     {
@@ -33,11 +33,10 @@ class calculator
         }
 
         this.CGPA /= this.totalCredit;
-        this.CGPA = Double.parseDouble(new DecimalFormat("#.##").format(this.CGPA));
     }
 
     double getCGPA() {
-        return this.CGPA;
+        return Double.parseDouble(new DecimalFormat("#.##").format(this.CGPA));
     }
 
 
