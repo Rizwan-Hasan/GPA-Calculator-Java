@@ -35,7 +35,7 @@
                   <Font name="Fugaz One" size="12.0" />
                </font></Button>
          </children></AnchorPane>
-      <Label fx:id="mainLabel" layoutX="14.0" layoutY="25.0" prefHeight="36.0" prefWidth="281.0" text="CGPA Calculator" textFill="#6e3042">
+      <Label fx:id="mainLabel" layoutX="14.0" layoutY="25.0" prefHeight="55.0" prefWidth="450.0" text="CGPA Calculator" textFill="#6e3042">
          <font>
             <Font name="Dosis SemiBold" size="36.0" />
          </font>

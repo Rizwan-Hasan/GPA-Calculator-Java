@@ -20,8 +20,9 @@ public class Controller extends ControllerAnimation
                 labBox.getText().strip(),
                 theoryCheckBox.isSelected(),
                 labCheckBox.isSelected());
-
-        System.out.println(cgpa.getCGPA());
+        String result = String.valueOf(cgpa.getCGPA());
+        System.out.println(result);
+        mainLabel.setText("Your cgpa is: " + result);
 
     }
 
