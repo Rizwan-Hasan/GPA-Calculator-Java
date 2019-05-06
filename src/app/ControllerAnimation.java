@@ -1,14 +1,52 @@
 package app;
 
 import javafx.animation.PathTransition;
+import javafx.animation.RotateTransition;
 import javafx.scene.shape.Line;
 import javafx.util.Duration;
 
 
 class ControllerAnimation extends ControllerSceneObjectVars
 {
+
     public void initialize()
     {
+        // Circle Image Rotation Part 1
+        {
+            RotateTransition rt = new RotateTransition();
+            rt.setNode(circleImage);
+            rt.setDuration(Duration.seconds(2));
+            rt.setFromAngle(360);
+            rt.setToAngle(0);
+            rt.setAutoReverse(true);
+            rt.setCycleCount(3);
+            rt.play();
+        }
+
+        // Calculate Button Rotation
+        {
+            RotateTransition rt = new RotateTransition();
+            rt.setNode(calculateButton);
+            rt.setDuration(Duration.seconds(2));
+            rt.setFromAngle(0);
+            rt.setToAngle(360);
+            rt.setAutoReverse(true);
+            rt.setCycleCount(3);
+            rt.play();
+        }
+
+        // Circle Image Rotation Part 2
+        {
+            RotateTransition rt = new RotateTransition();
+            rt.setNode(circleImage);
+            rt.setDuration(Duration.seconds(2));
+            rt.setFromAngle(360);
+            rt.setToAngle(0);
+            rt.setAutoReverse(false);
+            rt.setCycleCount(4);
+            rt.play();
+        }
+
         /*
         FadeTransition fadeIn = new FadeTransition(Duration.millis(2000));
         fadeIn.setNode(mainForm);

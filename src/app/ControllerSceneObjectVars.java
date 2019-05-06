@@ -2,6 +2,7 @@ package app;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 class ControllerSceneObjectVars
@@ -23,4 +24,7 @@ class ControllerSceneObjectVars
     //CheckBoxes
     @FXML protected CheckBox theoryCheckBox;
     @FXML protected CheckBox labCheckBox;
+
+    //ImageViews
+    @FXML protected ImageView circleImage;
 }
