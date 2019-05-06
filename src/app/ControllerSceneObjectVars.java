@@ -15,7 +15,12 @@ class ControllerSceneObjectVars
 
     // Buttons
     @FXML protected Button calculateButton;
+    @FXML protected Button closeBtn;
+    @FXML protected Button saveBtn;
+
+    // Menu Item
     @FXML protected MenuItem quitMenuBtn;
+    @FXML protected MenuItem editSheetBtn;
 
     // TextFields
     @FXML protected TextField theoryBox;

@@ -17,7 +17,7 @@ public class Main extends Application
         Scene scene = new Scene(root);
         scene.getStylesheets().clear();
         if (this.isWindows())
-            scene.getStylesheets().add(getClass().getResource("stylesheet.css").toExternalForm());
+            scene.getStylesheets().add(getClass().getResource("app.css").toExternalForm());
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
         primaryStage.setTitle("CGPA Calculator");
@@ -26,7 +26,7 @@ public class Main extends Application
         primaryStage.show();
     }
 
-    private boolean isWindows()
+    boolean isWindows()
     {
         return System.getProperty("os.name").startsWith("Windows");
     }
