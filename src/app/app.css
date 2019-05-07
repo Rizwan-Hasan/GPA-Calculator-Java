@@ -31,7 +31,7 @@ Application Cascading Style Sheets
 
 #mainLabel {
     -fx-font-family: "Dosis";
-    -fx-font-size: 42px;
+    -fx-font-size: 42;
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0, 3, 3);
 }
 
@@ -51,14 +51,14 @@ Application Cascading Style Sheets
 #theoryLabel {
     -fx-font-family: "Cambria";
     -fx-text-fill: #472349;
-    -fx-font-size: 24px;
+    -fx-font-size: 24;
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0, 3, 3);
 }
 
 #labLabel {
     -fx-font-family: "Cambria";
     -fx-text-fill: #472349;
-    -fx-font-size: 24px;
+    -fx-font-size: 24;
     -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 20, 0, 3, 3);
 }
 
