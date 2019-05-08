@@ -17,18 +17,17 @@ public class Main extends Application
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("app.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainWindow.fxml"));
         Parent root = fxmlLoader.load();
         controller = fxmlLoader.getController();
         Scene scene = new Scene(root);
         scene.setOnKeyPressed(Main::handle);
         scene.getStylesheets().clear();
         if (this.isWindows())
-            scene.getStylesheets().add(getClass().getResource("app.css").toExternalForm());
-        primaryStage.setTitle("Hello World");
+            scene.getStylesheets().add(getClass().getResource("MainWindow.css").toExternalForm());
+        primaryStage.setTitle("CGPA Calculator");
         primaryStage.setScene(scene);
         primaryStage.setResizable(false);
-        primaryStage.setTitle("CGPA Calculator");
         primaryStage.setScene(scene);
         primaryStage.getIcons().add(icon);
         primaryStage.show();
