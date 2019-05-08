@@ -3,7 +3,7 @@ Application Cascading Style Sheets
  */
 
 .root {
-    -fx-background-image:url('images/background.jpg');
+    -fx-background-image:url('resources/background.jpg');
     -fx-background-size:cover;
 }
 
@@ -63,11 +63,11 @@ Application Cascading Style Sheets
 }
 
 #circleImage {
-    -fx-image:url('images/circle.png');
+    -fx-image:url('resources/circle.png');
 }
 
 #calculateButton {
-    -fx-background-image: url('images/circlebtn1.png');
+    -fx-background-image: url('resources/circlebtn1.png');
     -fx-background-size: 90%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: 50%;
@@ -79,7 +79,7 @@ Application Cascading Style Sheets
 }
 
 #calculateButton:hover {
-    -fx-background-image: url('images/circlebtn2.png');
+    -fx-background-image: url('resources/circlebtn2.png');
     -fx-background-size: 90%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: 50%;
