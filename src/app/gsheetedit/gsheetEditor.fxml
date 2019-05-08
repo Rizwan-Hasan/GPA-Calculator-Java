@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="182.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.gsheetedit.GSheetEditorController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="182.0" stylesheets="@gsheetEditor.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.gsheetedit.GSheetEditorController">
    <children>
       <Button fx:id="closeBtn" layoutX="14.0" layoutY="384.0" mnemonicParsing="false" onAction="#closeBtnAction" prefHeight="0.0" prefWidth="65.0" text="Close" />
       <Button fx:id="saveBtn" layoutX="104.0" layoutY="384.0" mnemonicParsing="false" onAction="#saveBtnAction" prefHeight="0.0" prefWidth="65.0" text="Save" />

@@ -4,15 +4,29 @@ import app.gsheetedit.GradeSheetEditor;
 import javafx.animation.FadeTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
+import javafx.stage.Stage;
 import javafx.util.Duration;
+
+import java.util.Optional;
 
 public class Controller extends ControllerAnimation
 {
     @FXML
     public void quitMenuBtnAction (ActionEvent event)
     {
-        System.out.println("Quitting");
-        System.exit(0);
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+        alert.setTitle("Confirmation");
+        alert.setHeaderText("Are you sure to quit?");
+        alert.setContentText("Click Ok to quit");
+        alert.initOwner(calculateButton.getScene().getWindow());
+        Optional<ButtonType> alertStatus = alert.showAndWait();
+        if (alertStatus.isPresent() && alertStatus.get() == ButtonType.OK) {
+            System.out.println("Quit");
+            Stage stage = (Stage) calculateButton.getScene().getWindow();
+            stage.close();
+        }
     }
 
     @FXML

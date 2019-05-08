@@ -5,6 +5,7 @@ import app.gradeList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 import java.io.File;
 import java.util.Scanner;
@@ -28,6 +29,9 @@ public class GradeSheetEditor
             stage.getIcons().add(new Main().icon);
             stage.show();
 
+            // Warning
+            showEditSheetWarning(stage);
+
             // Controller
             GSheetEditorController controller = gradeSheetFXML.getController();
 
@@ -49,5 +53,16 @@ public class GradeSheetEditor
             e.printStackTrace();
         }
         return null;
+    }
+
+    private void showEditSheetWarning(Stage stage)
+    {
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Editing Tips");
+        alert.setHeaderText("To edit grade sheet, you have to follow the default pattern.\n" +
+                            "Otherwise it won't work.");
+        alert.setContentText("Click Ok to continue");
+        alert.initOwner(stage);
+        alert.show();
     }
 }

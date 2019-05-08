@@ -11,7 +11,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="424.0" prefWidth="770.0" stylesheets="@MainWindow.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Controller">
     <children>
       <AnchorPane fx:id="mainForm" layoutX="483.0" layoutY="18.0" prefHeight="388.0" prefWidth="261.0">
          <children>
@@ -44,8 +44,8 @@
         <menus>
           <Menu fx:id="gsheetMenu" mnemonicParsing="false" text="Grade Sheet">
             <items>
-              <MenuItem fx:id="editSheetBtn" mnemonicParsing="false" onAction="#editSheetBtnAction" text="Edit Sheet" />
-                  <MenuItem fx:id="quitMenuBtn" mnemonicParsing="false" onAction="#quitMenuBtnAction" text="Quit" />
+              <MenuItem fx:id="editSheetBtn" mnemonicParsing="false" onAction="#editSheetBtnAction" text="Edit Sheet    [ALT+G]" />
+                  <MenuItem fx:id="quitMenuBtn" mnemonicParsing="false" onAction="#quitMenuBtnAction" text="Quit             [ALT+Q]" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

@@ -2,7 +2,7 @@
 Application Cascading Style Sheets
  */
 
-.root {
+#anchorPane {
     -fx-background-image:url('resources/background.jpg');
     -fx-background-size:cover;
 }

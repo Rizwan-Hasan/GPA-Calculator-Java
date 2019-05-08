@@ -6,11 +6,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextArea;
 import javafx.stage.Stage;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 public class GSheetEditorController implements Initializable {
@@ -53,7 +55,10 @@ public class GSheetEditorController implements Initializable {
             alert.setTitle("Successful");
             alert.setHeaderText("Grade Sheet has been updated successfully");
             alert.setContentText("Click Ok to continue");
-            alert.show();
+            alert.initOwner(saveBtn.getScene().getWindow());
+            Optional<ButtonType> alertStatus = alert.showAndWait();
+            if (alertStatus.isPresent() && alertStatus.get() == ButtonType.OK)
+                closeBtn.fire();
         } else {
             Alert alert = new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Error");
