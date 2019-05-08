@@ -12,6 +12,7 @@ import javafx.stage.Stage;
 public class Main extends Application
 {
     private static Controller controller;
+    public Image icon = new Image(getClass().getResource("icon.png").toExternalForm());
 
     @Override
     public void start(Stage primaryStage) throws Exception
@@ -29,7 +30,7 @@ public class Main extends Application
         primaryStage.setResizable(false);
         primaryStage.setTitle("CGPA Calculator");
         primaryStage.setScene(scene);
-        primaryStage.getIcons().add(new Image(getClass().getResource("icon.png").toExternalForm()));
+        primaryStage.getIcons().add(icon);
         primaryStage.show();
     }
 
