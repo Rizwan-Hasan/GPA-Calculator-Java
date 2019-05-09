@@ -24,14 +24,6 @@ public class resources
             getClass().getResource("resources/MIT.png").toExternalForm()
     );
 
-    public Image mitLogo = new Image (
-            getClass().getResource("resources/MIT_Logo.png").toExternalForm()
-    );
-
-    public Image javafxLogo = new Image (
-            getClass().getResource("resources/JavaFX_Logo.png").toExternalForm()
-    );
-
     public Image editIcon = new Image (
             getClass().getResource("resources/edit.png").toExternalForm()
     );

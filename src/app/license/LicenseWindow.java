@@ -18,7 +18,7 @@ public class LicenseWindow
             Scene scene = new Scene(root);
             scene.getStylesheets().clear();
             scene.getStylesheets().add(getClass().getResource("LicenseWindow.css").toExternalForm());
-            stage.setTitle("License");
+            stage.setTitle("License Agreement");
             stage.setScene(scene);
             stage.setResizable(false);
             stage.getIcons().add(new resources().mitIcon);
