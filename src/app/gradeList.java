@@ -11,7 +11,7 @@ import org.yaml.snakeyaml.Yaml;
 
 public class gradeList
 {
-    public String gradeSheetFileName = new Main().AppPath + "grade.yml";
+    public String gradeSheetFileName = new ExtraWork().appRootPath() + "grade.yml";
 
     Map<String, Object> load()
     {

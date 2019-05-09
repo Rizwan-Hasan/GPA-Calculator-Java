@@ -11,7 +11,6 @@ import javafx.stage.Stage;
 public class Main extends Application
 {
     private static Controller controller;
-    String AppPath = AppRootPath();
 
     @Override
     public void start(Stage primaryStage) throws Exception
@@ -29,7 +28,6 @@ public class Main extends Application
         primaryStage.setScene(scene);
         primaryStage.getIcons().add(new resources().icon);
         primaryStage.show();
-        AppRootPath();
     }
 
     private static void handle(KeyEvent event) {
@@ -70,32 +68,6 @@ public class Main extends Application
             controller.aboutMenuBtn.fire();
             event.consume();
         }
-    }
-
-    private String AppRootPath()
-    {
-        String AppPath = System.getProperty("java.class.path");
-        StringBuilder x = new StringBuilder();
-        boolean IsWindows = System.getProperty("os.name").contains("Windows");
-
-        if (AppPath.contains(".jar;")) {
-            AppPath = "";
-        }
-        else if (AppPath.contains(".jar")) {
-            if (IsWindows) {
-                String[] tmp = AppPath.split("\\s*\\\\s*");
-                for (int i = 0; i < tmp.length-1; i++)
-                    x.append(tmp[i]).append("\\");
-            } else {
-                String[] tmp = AppPath.split("\\s*/\\s*");
-                for (int i = 0; i < tmp.length-1; i++)
-                    x.append(tmp[i]).append("/");
-            }
-            AppPath = x.toString();
-        } else {
-            AppPath = "";
-        }
-        return AppPath;
     }
 
     public static void main(String[] args)
