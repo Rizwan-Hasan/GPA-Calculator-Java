@@ -1,8 +1,8 @@
 package app;
 
-class ExtraWork
+public class ExtraWork
 {
-    String appRootPath()
+    public String appRootPath()
     {
         String AppPath = System.getProperty("java.class.path");
         StringBuilder x = new StringBuilder();

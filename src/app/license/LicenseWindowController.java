@@ -1,5 +1,6 @@
 package app.license;
 
+import app.ExtraWork;
 import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -8,7 +9,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.image.ImageView;
 import javafx.util.Duration;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -31,11 +31,11 @@ public class LicenseWindowController implements Initializable
     private void setLicenseText()
     {
         try {
-            String licenseFile = getClass().getResource("LICENSE.txt").getFile();
+            String licenseFile = new ExtraWork().appRootPath() + "LICENSE";
             String licenseText = new Scanner(new File(licenseFile)).useDelimiter("\\A").next().strip();
             licenseBox.setEditable(false);
             licenseBox.setText(licenseText);
-        } catch (FileNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
