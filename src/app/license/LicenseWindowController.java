@@ -23,7 +23,7 @@ public class LicenseWindowController implements Initializable
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
         this.setLicenseText();
-        this.animateFadeIn(licenseLogo, 1.5);
+        this.animateFadeIn(licenseLogo, 1.3);
         this.animateFadeIn(opensourceLogo, 1.0);
         this.animateFadeIn(licenseBox, 0.5);
     }
