@@ -1,19 +1,27 @@
 package app.about;
 
 import app.VersionInfo;
+import javafx.animation.FadeTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.control.TextArea;
+import javafx.scene.image.ImageView;
+import javafx.util.Duration;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class AboutWindowController implements Initializable
 {
+    @FXML private ImageView appIcon;
     @FXML private TextArea aboutBox;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
+        animateFadeIn(appIcon, 1.0);
+        animateFadeIn(aboutBox, 0.5);
         aboutBox.setEditable(false);
         aboutBox.setText(infoText());
     }
@@ -52,5 +60,17 @@ public class AboutWindowController implements Initializable
                 .append("\n\n");
         info.append(versionInfo.getCopyright());
         return info.toString();
+    }
+
+    private void animateFadeIn(Node node, double sec)
+    {
+        FadeTransition fadeIn = new FadeTransition();
+        fadeIn.setDuration(Duration.seconds(sec));
+        fadeIn.setNode(node);
+        fadeIn.setFromValue(0.1);
+        fadeIn.setToValue(1.0);
+        fadeIn.setCycleCount(1);
+        fadeIn.setAutoReverse(false);
+        fadeIn.playFromStart();
     }
 }
