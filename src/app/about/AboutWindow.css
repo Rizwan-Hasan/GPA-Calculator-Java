@@ -1,0 +1,30 @@
+#anchorPane {
+    -fx-background-image: url('../resources/background2.jpg');
+    -fx-background-size: cover;
+}
+
+#appIcon {
+    -fx-image: url('../resources/icon.png');
+}
+
+#aboutBox {
+    -fx-font-family: 'DejaVu Sans';
+    -fx-font-size: 13;
+    -fx-border-radius: 10;
+    -fx-background-color: #E0DBE1;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(110,48,66,1), 15, 0, 0, 0);
+    -fx-text-fill: #472349;
+}
+
+#aboutBox:focused {
+    -fx-border-radius: 10;
+    -fx-font-size: 13;
+    -fx-highlight-fill: #6D3042;
+    -fx-highlight-text-fill: #E0DBE1;
+    -fx-effect: dropshadow(three-pass-box, rgba(110,48,66,1), 15, 0, 0, 0);
+}
+
+#aboutBox .content {
+    -fx-background-color: #DFDAE0;
+}

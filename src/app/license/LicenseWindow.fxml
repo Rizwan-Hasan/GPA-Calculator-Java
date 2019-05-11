@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="542.0" prefWidth="573.0" stylesheets="@LicenseWindow.css" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.license.LicenseWindowController">
+   <children>
+      <ImageView fx:id="licenseLogo" fitHeight="134.0" fitWidth="178.0" layoutX="24.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <TextArea fx:id="licenseBox" layoutX="10.0" layoutY="163.0" prefHeight="368.0" prefWidth="553.0" />
+      <ImageView fx:id="opensourceLogo" fitHeight="117.0" fitWidth="300.0" layoutX="249.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

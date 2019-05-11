@@ -1,0 +1,32 @@
+#anchorPane {
+    -fx-background-image: url('../resources/background2.jpg');
+    -fx-background-size: cover;
+}
+
+#licenseLogo {
+    -fx-image: url('../resources/MIT_Logo.png');
+}
+
+#opensourceLogo {
+    -fx-image: url('../resources/Open_Source.png');
+}
+
+#licenseBox {
+    -fx-font-family: 'DejaVu Sans';
+    -fx-border-radius: 10;
+    -fx-background-color: #E0DBE1;
+    -fx-background-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, rgba(110,48,66,1), 15, 0, 0, 0);
+    -fx-text-fill: #472349;
+}
+
+#licenseBox:focused {
+    -fx-border-radius: 10;
+    -fx-highlight-fill: #6D3042;
+    -fx-highlight-text-fill: #E0DBE1;
+    -fx-effect: dropshadow(three-pass-box, rgba(110,48,66,1), 15, 0, 0, 0);
+}
+
+#licenseBox .content {
+    -fx-background-color: #DFDAE0;
+}
