@@ -1,6 +1,8 @@
 # CGPA Calculator 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Language: Java](https://img.shields.io/badge/Language-Java-green.svg)](https://www.java.com) 
+[![GUI: JavaFX](https://img.shields.io/badge/GUI-JavaFX-lightgrey.svg)](https://openjfx.io/)
 
 ## Screenshots
 
