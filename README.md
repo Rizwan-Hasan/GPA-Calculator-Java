@@ -1,4 +1,4 @@
-# CGPA Calculator 
+# CGPA Calculator Java
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 [![Language: Java](https://img.shields.io/badge/Language-Java-green.svg)](https://www.java.com) 
